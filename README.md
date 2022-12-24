@@ -1,2 +1,2 @@
-# PySIPmath-app
-A web app for the PySIPmath library
+# Example Sipmath API app
+An example web app for the SIPmath API.
