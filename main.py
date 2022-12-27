@@ -97,7 +97,8 @@ if data_type == 'Excel File':
                 r = requests.post(api_url, json=payload)
                 if r.ok:
                     returned_Sipmath = r.json()
-                    table_container.download_button(f"Download {returned_Sipmath['name']}", returned_Sipmath, returned_Sipmath['name'])
+                    print(r.json())
+                    table_container.download_button(f"Download {returned_Sipmath['name']}", json.dumps(returned_Sipmath), returned_Sipmath['name'])
                     table_container.write(f"Preview of {returned_Sipmath['name']}:")
                     table_container.json(returned_Sipmath)
 
